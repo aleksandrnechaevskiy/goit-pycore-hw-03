@@ -1,5 +1,7 @@
 import random
 def get_numbers_ticket(min, max, quantity):
+    if max-min < quantity:
+        return "Range is less then qty. Correct your data and try again"
     population=[]
     for i in range (min, max+1):#Визначаємо набір чисел виходячи з діапазону
         population.append(i)
